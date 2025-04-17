@@ -1,8 +1,0 @@
-/**
- * 
- */
-/**
- * 
- */
-module triangulo_raiz {
-}
