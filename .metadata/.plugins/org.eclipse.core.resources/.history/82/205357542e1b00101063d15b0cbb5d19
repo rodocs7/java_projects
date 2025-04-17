@@ -1,8 +1,0 @@
-/**
- * 
- */
-/**
- * 
- */
-module triangle_oo {
-}
