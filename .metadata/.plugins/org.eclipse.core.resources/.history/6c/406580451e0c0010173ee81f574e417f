@@ -1,0 +1,19 @@
+ packagecourse;
+ importjava.util.Scanner;
+ publicclassProgram{
+ publicstaticvoidmain(String[] args) {
+ Scanner sc= newScanner(System.in);
+ System.out.println("Enterthreenumbers:");
+ inta= sc.nextInt();
+ intb= sc.nextInt();
+ intc= sc.nextInt();
+ if(a> b&& a> c) {
+ System.out.println("Higher= "+ a);
+ } elseif(b> c) {
+ System.out.println("Higher= "+ b);
+ } else{
+ System.out.println("Higher= "+ c);
+ }
+ sc.close();
+ }
+ }
