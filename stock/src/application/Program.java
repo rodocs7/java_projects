@@ -32,7 +32,17 @@ public class Program {
 		
 		System.out.println("Enter the number of products to be added in stock: ");
 		int quantity = sc.nextInt(); // esse quantity
-		product.addProducts(quantity); //e esse quantty sao os mesmos, ele adicionam ao método product.addProducts que o recebe, lê e faz a operação
+		product.addProducts(quantity); //e esse quantity sao os mesmos, ele adicionam ao método product.addProducts que o recebe, lê e faz a operação
+		
+		
+		System.out.println();
+		System.out.println("Updated data: " + product); 
+		
+		
+		System.out.println();
+		System.out.println("Enter the number of products to be removed from stock: ");
+		int quantity = sc.nextInt(); 
+		product.removeProducts(quantity); 
 		
 		
 		System.out.println();
