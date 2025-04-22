@@ -41,7 +41,7 @@ public class Program {
 		
 		System.out.println();
 		System.out.println("Enter the number of products to be removed from stock: ");
-		int quantity = sc.nextInt(); 
+		quantity = sc.nextInt(); 
 		product.removeProducts(quantity); 
 		
 		
