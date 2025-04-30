@@ -18,6 +18,7 @@ public class Program {
 
         System.out.print("Tax: ");
         double tax = sc.nextDouble();
+        
 
         Employee emp = new Employee(name, grossSalary, tax);
 
@@ -26,6 +27,7 @@ public class Program {
         System.out.print("Which percentage to increase salary? ");
         double percentage = sc.nextDouble();
         emp.increaseSalary(percentage);
+        
 
         System.out.println("Updated data: " + emp);
 
