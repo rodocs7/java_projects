@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Program {
 	
-	public static final double PI = 3.1459; // Final quer dizer que ele é uma constante e não uma variável (tem que ser tudo maiusculo)
+	public static final double PI = 3.14; // Final quer dizer que ele é uma constante e não uma variável (tem que ser tudo maiusculo)
 
 	public static void main(String[] args) {
 		
