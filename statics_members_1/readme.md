@@ -33,6 +33,10 @@ public class Produto {
         return nome;
     }
 }
+
+
+
+
 🧰 util (de “utilities”)
 Contém classes auxiliares com métodos úteis ou genéricos, que ajudam em operações matemáticas, conversões, manipulações de texto, datas, etc.
 
