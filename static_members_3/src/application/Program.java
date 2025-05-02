@@ -6,26 +6,26 @@ import java.util.Scanner;
 import util.Calculator;
 
 public class Program {
-	
-	public static void main(String[] args) {
-		
-		Locale.setDefault(Locale.US);
-		Scanner sc = new Scanner(System.in);
-		
-		System.out.print("Whats is the dollar price: ");
-		double money = sc.nextDouble();
-		
-	
-		System.out.print("How many dollars will be bought: " );
-		double howmuch = sc.nextDouble();
-		
-	
-		
-		
-		System.out.printf("Amount to be paid in reais: ", money * howmuch);
-		
-		
-		sc.close();
-	}
-
+    
+    public static void main(String[] args) {
+        
+    	Locale.setDefault(Locale.US);
+    	Scanner sc = new Scanner(System.in);
+    	
+    	System.out.println("What is the dollar price? ");
+    	double dollar = sc.nextDouble();
+    	
+    	System.out.println("How many dollars will be bought? ");
+    	double howmuch = sc.nextDouble();
+    	
+    	double result = Calculator.dollarToReal(dollar, howmuch);
+    	
+    	
+    	System.out.printf("Amount to be paid in reais: %.2f%n ", result);
+   
+    	
+    	
+        
+        sc.close();
+    }
 }
