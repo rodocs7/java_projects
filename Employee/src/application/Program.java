@@ -20,7 +20,7 @@ public class Program {
         double tax = sc.nextDouble();
         
 
-        Employee emp = new Employee(name, grossSalary, tax);
+        Employee emp = new Employee(name, grossSalary, tax);   //construtor
 
         System.out.println("Employee: " + emp);
 
