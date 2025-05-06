@@ -1,22 +1,21 @@
-SOBRECARGA
-
+Sobrecarga em Java
 
 Em Java, sobrecarga (em inglês, overloading) é o conceito de definir mais de um método com o mesmo nome dentro da mesma classe, mas com parâmetros diferentes.
 
 ✅ O que é sobrecarga de métodos?
-Você sobrecarga um método quando:
+
+Você cria uma sobrecarga de método quando:
 
 Usa o mesmo nome, mas
 
 Muda o tipo, a quantidade ou a ordem dos parâmetros.
 
 🧠 Por que usar sobrecarga?
+
 Para deixar seu código mais organizado e flexível, criando variações de um mesmo comportamento.
 
 📌 Exemplo simples:
-java
-Copiar
-Editar
+
 public class Calculadora {
 
     public int soma(int a, int b) {
@@ -31,10 +30,9 @@ public class Calculadora {
         return a + b + c;
     }
 }
+
 🧪 Uso no main:
-java
-Copiar
-Editar
+
 public class Main {
     public static void main(String[] args) {
         Calculadora calc = new Calculadora();
@@ -44,25 +42,23 @@ public class Main {
         System.out.println(calc.soma(1, 2, 3));      // chama soma(int, int, int)
     }
 }
-🧭 Regras da sobrecarga:
+
+🛍️ Regras da sobrecarga:
+
 Os nomes dos métodos devem ser iguais.
 
 Os parâmetros devem ser diferentes em tipo, número ou ordem.
 
 O tipo de retorno não conta sozinho para diferenciar métodos!
 
-java
-Copiar
-Editar
 // Isso NÃO compila:
 int soma(int a, int b)
 double soma(int a, int b) // ❌ Mesmo nome e mesmos parâmetros — conflito
-📘 Curiosidade:
-Sobrecarga é comum também em construtores, para permitir criar objetos de formas diferentes.
 
-java
-Copiar
-Editar
+📘 Curiosidade:
+
+A sobrecarga é comum também em construtores, para permitir criar objetos de formas diferentes:
+
 public class Produto {
     String nome;
     double preco;
@@ -79,3 +75,5 @@ public class Produto {
         this.preco = preco;
     }
 }
+
+Sobrecarga é uma ferramenta poderosa que ajuda a tornar seu código mais reutilizável e legível quando usada com responsabilidade.
