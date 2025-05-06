@@ -1,4 +1,4 @@
-Nesse treino implementeo this.
+Nesse treino implementei o this.
 
 
 Palavra this
