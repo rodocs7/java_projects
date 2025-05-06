@@ -1,4 +1,4 @@
-package entities;  
+package entities;
 
 public class Product { //nome da classe do objeto
 	
@@ -14,6 +14,11 @@ public class Product { //nome da classe do objeto
 		this.name = name;
 		this.price = price;
 		this.quantity = quantity;
+	}
+	
+	public Product(String name, double price) {   // sobrecarga
+		this.name = name;
+		this.price = price;
 	}
 	
 	
