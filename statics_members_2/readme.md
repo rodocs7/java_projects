@@ -1,14 +1,66 @@
-TERCEIRA VERSÃO DE TREINO
-Esta versão foi feita com base na explicação de que PI, circumference e volume são valores que não dependem de objetos individuais, ou seja, são os mesmos para todos.
+Aqui aprendi a usar o Util.
 
-Por isso, esses elementos são declarados como static: eles pertencem à classe, e não a instâncias específicas (objetos).
+Segue diferença:
 
-Além disso, como esses valores não devem mudar, PI também é declarado como uma constante (final).
+📦 entities (ou model)
+Representa objetos reais do seu sistema — as "coisas" com as quais o programa trabalha.
 
-Dessa forma:
+✅ Características:
+Classes com atributos e comportamentos.
 
-circumference e volume são métodos estáticos.
+Representam dados como: Pessoa, Produto, Cliente, Pedido, etc.
 
-PI é uma constante estática (public static final double PI = 3.14).
+Costumam ter getters, setters, construtores, toString, etc.
 
-Como são estáticos, não é necessário criar um objeto para usá-los — basta chamar diretamente pela classe.
+🧩 Exemplo:
+java
+Copiar
+Editar
+public class Produto {
+    private String nome;
+    private double preco;
+
+    public Produto(String nome, double preco) {
+        this.nome = nome;
+        this.preco = preco;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+}
+
+
+
+
+🧰 util (de “utilities”)
+Contém classes auxiliares com métodos úteis ou genéricos, que ajudam em operações matemáticas, conversões, manipulações de texto, datas, etc.
+
+✅ Características:
+Geralmente contém métodos estáticos.
+
+Não representa um “objeto do mundo real”.
+
+Reutilizável em qualquer parte do sistema.
+
+🧩 Exemplo:
+java
+Copiar
+Editar
+public class StringUtil {
+    public static String capitalize(String texto) {
+        if (texto == null || texto.isEmpty()) return texto;
+        return texto.substring(0, 1).toUpperCase() + texto.substring(1);
+    }
+}
+🔍 Comparando:
+
+Aspecto	entities	util
+Representa o quê?	Dados do sistema (ex: Cliente)	Funções auxiliares (ex: calcular)
+Tem atributos?	Sim	Normalmente não
+Usa static?	Raramente	Frequentemente
+Exemplo	Produto, Aluno, Pedido	MathUtils, DateUtil

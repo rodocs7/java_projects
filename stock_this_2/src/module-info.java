@@ -4,5 +4,5 @@
 /**
  * 
  */
-module statics_members {
+module stock_1 {
 }

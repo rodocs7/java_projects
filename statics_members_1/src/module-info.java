@@ -4,5 +4,5 @@
 /**
  * 
  */
-module statics_members_1 {
+module statics_members {
 }
